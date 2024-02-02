@@ -1,13 +1,185 @@
-body {
+*{
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  font-size: 1rem;
+}
+body {
+  
+  min-height: 100vh;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.App{
+  display: grid;
+  align-content: space-between;
+  height: 100vh;
+  width: 100%;
+  box-shadow: 6px 5px 38px -1px rgba(0,0,0,0.75);
+-webkit-box-shadow: 6px 5px 38px -1px rgba(0,0,0,0.75);
+-moz-box-shadow: 6px 5px 38px -1px rgba(0,0,0,0.75);
+  max-width: 500px;
+  border: 1px solid black;
+  border-radius: 15px;
+  margin: auto;
+  font-size: 2rem;
+  
+}
+.MainContent{
+  overflow-y: scroll;
+}
+header{
+  width: 100%;
+  padding: 0 0.25rem;
+  background-color: midnightblue;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  color:  white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+
+main{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto;
+}
+footer{
+  width: 100%;
+  padding: 0.25em;
+  background-color: midnightblue;
+  color: aliceblue;
+  display: grid;
+  place-content: center;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+main{
+
+  display: grid;
+  
+}
+.para{
+  min-width: 300px;
+  text-align: center;
+  
+  
+}
+li{
+  list-style:inside;
+}
+#item{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0.5rem 0 0.5rem 0.5rem;
+  margin: 0.25rem 0;
+  background-color: aliceblue;
+}
+#item :first-child{
+  margin: 0;
+}
+#item input[type='checkbox'] {
+  text-align: center;
+  width: 2.5rem;
+  width: 4px;
+  min-width: 48px;
+  height: 48px;
+  min-height: 48px;
+  cursor: pointer;
+  margin-right: 0.5rem;
+
+}
+
+#item input [type='checkbox']:focus + label {
+  text-decoration: underline;
+}
+#item > label{
+  font-size: 0.75rem;
+  flex-grow: 1;
+}
+#item svg{
+  width: 48px;
+  min-width: 48px;
+  height: 36px;
+  font-size: 1rem;
+  color: rgb(180, 109, 70);
+  cursor: pointer;
+}
+#item svg:focus,
+#item svg:hover{
+  color: rgb(238, 241, 52);
+  outline: none;
+}
+.addForm {
+  display: flex;
+  justify-content: space-around;
+  align-items: center; 
+  
+}
+.addForm input[type="text"]{
+  flex-grow: 1;
+  max-width: calc(100%-50px);
+  min-height: 48x;
+  font-size: 1rem;
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+  margin-right: 0.25rem;
+  
+}
+#buttu{
+  top: 0%;
+  padding: 2px;
+  font-size: 1.20rem;
+  background-color: aliceblue;
+  color: blue;
+  cursor: pointer;
+  padding-top: 2px;
+}
+.addForm label{
+  position: relative;
+  
+}
+#buttu:hover{
+  background-color: lightgreen;
+}
+.searchItem{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+#searchitem{
+  
+  height: 100%;
+ 
+  text-align: center;
+  background-color: aliceblue;
+  border-top-left-radius: 0.40rem;
+  border-bottom-left-radius: 0.40rem;
+}
+#searchButton{
+  border-top-right-radius: .40rem;
+  border-bottom-right-radius: .40rem;
+  width: 30px;
+}
+#searchitem, #searchButton{
+  background-color: aliceblue;
+  height: 2rem;
+}
+#searchitem:hover, #searchButton:hover{
+  transition: all 2s ease 0.1s;
+  background-color: rgb(117, 251, 219, 0.5);
 }

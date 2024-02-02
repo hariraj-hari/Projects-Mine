@@ -13,6 +13,7 @@
   }
 }
 
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -27,12 +28,54 @@
 .App-link {
   color: #61dafb;
 }
-
-@keyframes App-logo-spin {
+.container{
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+.element{
+  width: 500px;
+  height: 600px;
+  overflow: scroll;
+  border: 2px double black;
+  margin-right: 50px;
+  
+}
+.selected{
+  background-color: #f59b9b;
+}
+th, td{
+  border: 1px solid black;
+  padding: 2px;
+}
+/* @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
   }
+} */
+.yourlist{
+  position: sticky;
+  top: 0;
+  background-color: white;
+  filter: blur(0.5);
+  color: blue;
+}
+.addForm{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.addForm1{
+  width: 50%;
+  flex: 1;
+}
+.addForm2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
 }
