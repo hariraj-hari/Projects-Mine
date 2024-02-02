@@ -18,4 +18,4 @@ This React project serves as an Activities Tracker where users can add, check, a
 Clone the repository to your local machine:
 
 ```bash
-git clone https://github.com/your-username/activities-tracker.git
+git clone https://github.com/hariraj-hari/Projects-Mine.git
